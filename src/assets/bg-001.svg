@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="287px" viewBox="0 0 102 287" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Group 27</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-2.1%" y="-3.8%" width="104.2%" height="107.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="0 283 280 283 280 3 0 3"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="banners/app" transform="translate(-395.000000, 3.000000)">
+            <g id="man02" filter="url(#filter-1)">
+                <g id="Group-27" transform="translate(392.000000, -4.000000)">
+                    <g id="Group-2" transform="translate(7.000000, 0.000000)" fill="#FFBC0D">
+                        <path d="M0,0 L8,0 L8,158.676013 C8,163.272529 4.41886792,167 0,167 L0,0 Z" id="Combined-Shape"></path>
+                        <path d="M0,290 L0,184.195876 C0,179.670103 3.58238994,176 8,176 L8,290 L0,290 Z" id="Fill-17"></path>
+                    </g>
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Clip-7"></g>
+                    <polygon id="Fill-18" fill="#FFBC0D" mask="url(#mask-3)" points="28 284 36 284 36 4 28 4"></polygon>
+                    <g id="Group-4" mask="url(#mask-3)">
+                        <g transform="translate(50.000000, -12.000000)">
+                            <path d="M0,90 C4.41886792,90 8,93.7067666 8,98.2777513 L8,295 L0,295 L0,90 Z" id="Combined-Shape" fill="#FFBC0D"></path>
+                            <path d="M0,71.7305942 L0,0 L8,0 L8,80 C3.58238994,80 0,76.2982707 0,71.7305942" id="Fill-20" fill="#FFBC0D"></path>
+                            <path d="M0,109 L0,90.20141 L0,88.1192439 C0,87.437762 0.572597137,86.8895589 1.19679094,87.0190656 C5.04766399,87.8162234 8,92.3527301 8,96.6553704 L8,97.999474 C8,100.947952 2.8655026,100.770666 0,109" id="Fill-26" fill="#DB0007"></path>
+                        </g>
+                    </g>
+                    <polygon id="Fill-14" fill="#FFBC0D" mask="url(#mask-3)" points="71 284 79 284 79 4 71 4"></polygon>
+                    <g id="Group-3" mask="url(#mask-3)" fill="#FFBC0D">
+                        <g transform="translate(93.000000, 3.000000)">
+                            <path d="M0,281 L0,206.247996 C0,201.693442 3.58238994,198 8,198 L8,281 L0,281 Z" id="Fill-10"></path>
+                            <path d="M0,188 L0,0 L8,0 L8,179.719496 C8,184.292001 4.41886792,188 0,188" id="Fill-22"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
