@@ -4,10 +4,23 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
+    maxWidth: {
+      'xs': '375px',
+    },
     extend: {
       fontFamily: {
         sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        'yellow-0': '#FFBC0D',
+        'grey-0': '#CCCCCC',
+        'grey-1':'#F7F7F7',
+        'red-0':'#BE1C0F'
+        
+      },
+      height: {
+        '17': '4.3rem'
+      }
     },
   },
   plugins: [
@@ -15,5 +28,17 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/aspect-ratio'),
+    require("daisyui")
   ],
+  daisyui: {
+    styled: true,
+    themes: false,
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
+    prefix: "",
+    darkTheme: "dark",
+  },
+  
 }
