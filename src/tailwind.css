@@ -15,7 +15,7 @@
   @apply text-base font-bold;
 }
 .span-font-style {
-  @apply text-xs font-bold;
+  @apply text-[13px] font-bold;
 }
 .flex-center {
   @apply flex items-center justify-center;

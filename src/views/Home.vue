@@ -1,5 +1,6 @@
 <script setup>
 import { reactive } from 'vue'
+import ReadMore from '@/components/ReadMore.vue'
 
 const data = reactive({
   warning: {
@@ -49,12 +50,12 @@ const data = reactive({
       {
         id: 1,
         date: '2022.05.26',
-        info: '大人もペロリ、不動の人気商品「ビッグマック®」キャンペーンビッグマックセットが2週間限定お得な550円!',
+        info: '大人気のコラボシェイクが4年ぶりにリニューアルして登場! “夏にぴったり” マクドナルド×「カルピス®」コラボ 第一',
       },
       {
         id: 2,
         date: '2022.05.26',
-        info: '大人もペロリ、不動の人気商品「ビッグマック®」キャンペーンビッグマックセットが2週間限定お得な550円!',
+        info: '刺激的で爽やかな辛さの「スパイシーチキンマックナゲット」が今年も登場!夜マック®にはポテナゲ初!2種のナゲットを楽しめる「食べくらべポテナゲ大・特大」も!',
       },
       {
         id: 3,
@@ -64,7 +65,7 @@ const data = reactive({
       {
         id: 4,
         date: '2022.05.26',
-        info: '大人もペロリ、不動の人気商品「ビッグマック®」キャンペーンビッグマックセットが2週間限定お得な550円!',
+        info: 'ハッピーセット®のおもちゃで楽しく考えて遊ぼう!恐竜・翼竜が生きた大迫力の世界観を再現したクラフトトイが登場!',
       },
       {
         id: 5,
@@ -73,11 +74,44 @@ const data = reactive({
       },
     ],
   },
+  newActions: {
+    title: 'お知らせ',
+    card: [
+      {
+        id: 1,
+        date: '2022.06.03',
+        info: '下平 篤雄「感謝とお別れの会(献花)」のご案内',
+      },
+      {
+        id: 2,
+        date: '2021.04.08',
+        info: '50周年記念サイト公開中！ぜひご覧ください。',
+      },
+      {
+        id: 3,
+        date: '2021.11.25',
+        info: 'ドライブスルーご利用状況のカメラ撮影のお知らせ',
+      },
+    ],
+  },
+  newAd: {
+    card: [
+      {
+        id: 1,
+        img: '../src/assets/ad-col-003.jpg',
+        info: '今だけ!6/1(水)から6/14(火)まで「ビッグマック®」セットがおトクな550円!',
+      },
+      {
+        id: 2,
+        img: '../src/assets/ad-col-004.jpg',
+        info: '「スパイシーチキンマックナゲット」が6/8(水)から期間限定で登場！',
+      },
+    ],
+  },
 })
 </script>
 <template>
   <div class="w-full bg-grey-1">
-    <!-- 導覽列 -->
     <div
       class="relative flex items-center justify-between bg-white py-2 px-4 shadow-md"
     >
@@ -162,7 +196,6 @@ const data = reactive({
         </svg>
       </div>
     </div>
-    <!-- 輪播圖 -->
     <div class="mt-4">
       <div class="carousel flex min-h-[296px] w-full">
         <div id="item1" class="carousel-item w-[100%]">
@@ -182,7 +215,6 @@ const data = reactive({
       </div>
     </div>
     <div class="px-4">
-      <!-- 緊急通知 -->
       <div class="mt-8">
         <h3 class="h3-font-style mb-6 text-red-0">
           {{ data.warning.title }}
@@ -209,7 +241,6 @@ const data = reactive({
           </svg>
         </div>
       </div>
-      <!-- 菜單 -->
       <div class="mt-8">
         <h3 class="h3-font-style mb-2">{{ data.menu.title }}</h3>
         <span class="span-font-style mb-4">{{ data.menu.info }}</span>
@@ -262,68 +293,97 @@ const data = reactive({
             </div>
           </li>
         </ul>
+        <div class="flex items-center justify-end gap-2">
+          <h2 class="text-right font-bold">もっと見る</h2>
+          <svg
+            width="11"
+            height="18"
+            viewBox="0 0 11 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1.87497 3.67326L3.31159 2.25L10.125 9L3.31159 15.75L1.87497 14.3267L7.25173 9L1.87497 3.67326Z"
+              fill="#1F2937"
+            ></path>
+          </svg>
+        </div>
       </div>
-      <!-- 最新活動 -->
       <div class="mt-8">
         <h3 class="h3-font-style">{{ data.news.title }}</h3>
         <ul class="mt-4 flex flex-col gap-4">
           <li
             v-for="item in data.news.card"
             :id="item.id"
-            class="rounded-xl border shadow-md"
+            class="rounded-xl border p-4 shadow-md"
           >
             <h3 class="h3-font-style">{{ item.date }}</h3>
-            <p>
-              {{ item.info }}
-            </p>
+            <div class="flex gap-6 pr-2">
+              <p class="font-bold line-clamp-2">
+                {{ item.info }}
+              </p>
+              <svg
+                width="30"
+                height="24"
+                viewBox="0 0 11 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.87497 3.67326L3.31159 2.25L10.125 9L3.31159 15.75L1.87497 14.3267L7.25173 9L1.87497 3.67326Z"
+                  fill="#1F2937"
+                ></path>
+              </svg>
+            </div>
           </li>
-          <h2 class="text-right">查看更多資料</h2>
+          <ReadMore>
+            <slot> 一覧へ </slot>
+          </ReadMore>
         </ul>
       </div>
       <!-- 最新消息 -->
       <div class="mt-8">
-        <h3>新消息</h3>
+        <h3 class="h3-font-style">{{ data.newActions.title }}</h3>
         <ul class="mt-4 flex flex-col gap-4">
-          <li class="rounded-xl border">
-            <span>日期</span>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
-              magnam velit suscipit placeat sit repellat error possimus!
-              Sapiente ab laboriosam vero?
+          <li
+            v-for="item in data.newActions.card"
+            :id="item.id"
+            class="rounded-xl border p-4"
+          >
+            <h3 class="h3-font-style">{{ item.date }}</h3>
+            <p class="font-bold line-clamp-2">
+              {{ item.info }}
             </p>
           </li>
-          <li class="rounded-xl border">
-            <span>日期</span>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
-              magnam velit suscipit placeat sit repellat error possimus!
-              Sapiente ab laboriosam vero?
-            </p>
-          </li>
-          <h2 class="text-right">查看更多資料</h2>
         </ul>
       </div>
-      <!-- 促銷商品 -->
       <div class="mt-8">
-        <h3>這些在特價</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <ul class="cards flex flex-wrap justify-between gap-2">
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
-              quam, vitae inventore eligendi delectus laboriosam qui eaque!
-            </p>
-          </li>
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
-              quam, vitae inventore eligendi delectus laboriosam qui eaque!
-            </p>
-          </li>
+        <h3 class="h3-font-style">キャンペーン</h3>
+        <span class="span-font-style"
+          >マクドナルドの最新キャンペーンをチェック！</span
+        >
+        <ul class="cards my-4 flex flex-wrap justify-between gap-2">
+          <a
+            class="min-h-72 w-[48%]"
+            href="#"
+            v-for="item in data.newAd.card"
+            :id="item.id"
+          >
+            <li class="h-full rounded-xl border shadow">
+              <img :src="item.img" alt="ad" class="rounded-t-xl" />
+              <p class="span-font-style p-2">
+                {{ item.info }}
+              </p>
+            </li>
+          </a>
         </ul>
-        <h2 class="mt-4 text-right">查看更多資料</h2>
+        <ReadMore>
+          <slot> 一覧へ </slot>
+        </ReadMore>
       </div>
       <!-- 家庭 -->
       <div class="mt-8">
