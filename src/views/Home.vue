@@ -108,6 +108,401 @@ const data = reactive({
       },
     ],
   },
+  family: {
+    card: [
+      {
+        id: 1,
+        img: '../src/assets/card-001.png',
+        title: 'ハッピーセット®',
+      },
+      {
+        id: 2,
+        img: '../src/assets/card-002.png',
+        title: 'マックアドベンチャー®',
+      },
+      {
+        id: 3,
+        img: '../src/assets/card-003.png',
+        title: 'バースデーパーティ',
+      },
+      {
+        id: 4,
+        img: '../src/assets/card-004.png',
+        title: 'プレイランド',
+      },
+    ],
+  },
+  quality: {
+    card: [
+      {
+        id: 1,
+        img: '../src/assets/card-005.jpg',
+        title: '100%ビーフの知るほどナルホド',
+      },
+      {
+        id: 2,
+        img: '../src/assets/card-006.png',
+        title: '作り手の情熱',
+      },
+      {
+        id: 3,
+        img: '../src/assets/card-007.png',
+        title: '食材の道のり',
+      },
+      {
+        id: 4,
+        img: '../src/assets/card-008.png',
+        title: 'アレルギー・栄養・原産国情報',
+      },
+    ],
+  },
+  store: {
+    card: [
+      {
+        id: 1,
+        img: '../src/assets/card-009.png',
+        title: '未来型店舗体験',
+      },
+      {
+        id: 2,
+        img: '../src/assets/card-010.png',
+        title: 'マックデリバリー®（注文する）',
+      },
+      {
+        id: 3,
+        img: '../src/assets/card-011.png',
+        title: 'ポイントサービス',
+      },
+      {
+        id: 4,
+        img: '../src/assets/card-012.png',
+        title: 'お店をさがす',
+      },
+    ],
+  },
+  future: {
+    card: [
+      {
+        id: 1,
+        img: '../src/assets/card-013.png',
+        title: 'ファミリーへのコミットメント',
+      },
+      {
+        id: 2,
+        img: '../src/assets/card-014.png',
+        title: '持続可能な食材の調達',
+      },
+      {
+        id: 3,
+        img: '../src/assets/card-015.png',
+        title: 'パッケージ＆リサイクル',
+      },
+    ],
+  },
+  society: {
+    card: [
+      {
+        id: 1,
+        img: '../src/assets/card-016.jpg',
+        title: 'ドナルド・マクドナルド・ハウス支援',
+      },
+      {
+        id: 2,
+        img: '../src/assets/card-017.jpg',
+        title: '学童野球',
+      },
+      {
+        id: 3,
+        img: '../src/assets/card-018.png',
+        title: '小学生のサッカー',
+      },
+      {
+        id: 4,
+        img: '../src/assets/card-019.png',
+        title: '食育支援',
+      },
+    ],
+  },
+  question: {
+    card: [
+      {
+        id: 1,
+        info: '最近ナゲットソースやシャカチキのシーズニングなど単体で販売していないようですが？',
+      },
+      {
+        id: 2,
+        info: 'ギガビッグマック®はいつまで販売していますか？',
+      },
+      {
+        id: 3,
+        info: 'ギガビッグマック®は株主優待券対象ですか？',
+      },
+      {
+        id: 4,
+        info: 'グランドビッグマック®は株主優待券対象ですか？',
+      },
+      {
+        id: 5,
+        info: '「リラックマのねそべりこものいれ」のフタが開けづらいのですが。',
+      },
+    ],
+  },
+  footer: {
+    menu: {
+      id: 1,
+      title: 'メニュー',
+      item: [
+        {
+          id: 1,
+          title: 'おすすめ',
+        },
+        {
+          id: 2,
+          title: 'バーガー',
+        },
+        {
+          id: 3,
+          title: 'セット',
+        },
+        {
+          id: 4,
+          title: 'サイドメニュー',
+        },
+        {
+          id: 5,
+          title: 'ドリンク',
+        },
+        {
+          id: 6,
+          title: 'ハッピーセット®',
+        },
+        {
+          id: 7,
+          title: '朝マック',
+        },
+        {
+          id: 8,
+          title: '夜マック®',
+        },
+        {
+          id: 9,
+          title: 'スイーツ',
+        },
+        {
+          id: 10,
+          title: 'マックカフェ バイ バリスタ',
+        },
+      ],
+    },
+    actions: {
+      id: 1,
+      title: 'キャンペーン',
+      item: [
+        {
+          id: 1,
+          title: '商品',
+        },
+        {
+          id: 2,
+          title: 'ファミリーサービス',
+        },
+        {
+          id: 3,
+          title: 'インフォメーション',
+        },
+      ],
+    },
+    family: {
+      id: 1,
+      title: 'ファミリー',
+      item: [
+        {
+          id: 1,
+          title: 'おもちゃリサイクル',
+        },
+        {
+          id: 2,
+          title: 'マックアドベンチャー®',
+        },
+        {
+          id: 3,
+          title: 'ハッピーセット 本・おもちゃ紹介',
+        },
+        {
+          id: 4,
+          title: 'バースデーパーティー',
+        },
+        {
+          id: 5,
+          title: 'プレイランド',
+        },
+      ],
+    },
+    sustainable: {
+      id: 1,
+      title: 'サステナビリティ',
+      item: [
+        {
+          id: 1,
+          title: '安心でおいしいお食事を',
+        },
+        {
+          id: 2,
+          title: '地球環境のために',
+        },
+        {
+          id: 3,
+          title: '地域の仲間にサポートを',
+        },
+        {
+          id: 4,
+          title: '働きがいをすべての人に',
+        },
+        {
+          id: 5,
+          title: 'Smile Story',
+        },
+        {
+          id: 6,
+          title: 'マクドナルドとSDGs',
+        },
+        {
+          id: 7,
+          title: 'サステナビリティレポート',
+        },
+      ],
+    },
+    storeService: {
+      id: 1,
+      title: 'お店・サービス',
+      item: [
+        {
+          id: 1,
+          title: '未来型店舗体験',
+        },
+        {
+          id: 2,
+          title: '日本マクドナルド公式アプリ',
+        },
+        {
+          id: 3,
+          title: 'マックデリバリー®',
+        },
+        {
+          id: 4,
+          title: 'マックカフェ バイ バリスタ',
+        },
+        {
+          id: 5,
+          title: 'KODO',
+        },
+        {
+          id: 6,
+          title: 'ポイントサービス',
+        },
+        {
+          id: 7,
+          title: 'マクドナルド FREE Wi-Fi',
+        },
+        {
+          id: 8,
+          title: 'お支払い方法',
+        },
+      ],
+    },
+    aboutUs: {
+      id: 1,
+      title: '会社情報',
+      item: [
+        {
+          id: 1,
+          title: 'マクドナルドからのメッセージ',
+        },
+        {
+          id: 2,
+          title: '会社案内',
+        },
+        {
+          id: 3,
+          title: '社会とのつながり',
+        },
+        {
+          id: 4,
+          title: 'サステナビリティレポート',
+        },
+        {
+          id: 5,
+          title: 'ハンバーガー大学',
+        },
+        {
+          id: 6,
+          title: '土地・建物募集',
+        },
+        {
+          id: 7,
+          title: 'ニュースリリース',
+        },
+      ],
+    },
+    question: {
+      id: 1,
+      title: 'お問い合わせ',
+      item: [
+        {
+          id: 1,
+          title: 'お客様相談窓口',
+        },
+        {
+          id: 2,
+          title: 'よくあるご質問',
+        },
+      ],
+    },
+    job: {
+      id: 1,
+      title: '採用情報',
+      item: [
+        {
+          id: 1,
+          title: 'アルバイト採用',
+        },
+        {
+          id: 2,
+          title: '社員採用',
+        },
+        {
+          id: 3,
+          title: '障がい者採用',
+        },
+        {
+          id: 4,
+          title: 'フランチャイズ社員採用',
+        },
+      ],
+    },
+    sns: {
+      id: 1,
+      title: 'アプリ・SNS',
+      item: [
+        {
+          id: 1,
+          title: '公式アプリ',
+        },
+        {
+          id: 2,
+          title: 'Facebook',
+        },
+        {
+          id: 3,
+          title: 'Twitter',
+        },
+        {
+          id: 4,
+          title: 'YouTube',
+        },
+      ],
+    },
+  },
 })
 </script>
 <template>
@@ -247,7 +642,7 @@ const data = reactive({
         <ul class="mt-4 flex w-full flex-wrap justify-between">
           <li
             v-for="item in data.menu.card"
-            :id="item.id"
+            :key="item.id"
             class="mb-2 w-[49%] rounded-xl bg-white py-1 px-2 shadow-md"
           >
             <img :src="item.img" alt="menu on screen" class="rounded-t-xl" />
@@ -316,7 +711,7 @@ const data = reactive({
         <ul class="mt-4 flex flex-col gap-4">
           <li
             v-for="item in data.news.card"
-            :id="item.id"
+            :key="item.id"
             class="rounded-xl border p-4 shadow-md"
           >
             <h3 class="h3-font-style">{{ item.date }}</h3>
@@ -345,13 +740,12 @@ const data = reactive({
           </ReadMore>
         </ul>
       </div>
-      <!-- 最新消息 -->
       <div class="mt-8">
         <h3 class="h3-font-style">{{ data.newActions.title }}</h3>
         <ul class="mt-4 flex flex-col gap-4">
           <li
             v-for="item in data.newActions.card"
-            :id="item.id"
+            :key="item.id"
             class="rounded-xl border p-4"
           >
             <h3 class="h3-font-style">{{ item.date }}</h3>
@@ -371,7 +765,7 @@ const data = reactive({
             class="min-h-72 w-[48%]"
             href="#"
             v-for="item in data.newAd.card"
-            :id="item.id"
+            :key="item.id"
           >
             <li class="h-full rounded-xl border shadow">
               <img :src="item.img" alt="ad" class="rounded-t-xl" />
@@ -385,152 +779,131 @@ const data = reactive({
           <slot> 一覧へ </slot>
         </ReadMore>
       </div>
-      <!-- 家庭 -->
       <div class="mt-8">
-        <h3>家庭</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h3 class="h3-font-style">ファミリー</h3>
+        <span class="span-font-style"
+          >お子さまも大人も楽しめるサービスをご用意しています。</span
+        >
         <ul class="cards flex flex-wrap justify-between gap-2">
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
+          <a
+            href="#"
+            class="min-h-52 my-4 w-[48%]"
+            v-for="item in data.family.card"
+            :key="item.id"
+          >
+            <li class="rounded-xl shadow">
+              <img :src="item.img" class="rounded-t-xl" alt="photo on screen" />
+              <span class="span-font-style px-2">{{ item.title }}</span>
+            </li>
+          </a>
         </ul>
-        <h2 class="mt-4 text-right">查看更多資料</h2>
+        <ReadMore>
+          <slot>もっと見る</slot>
+        </ReadMore>
       </div>
-      <!-- 品質 -->
       <div class="mt-8">
-        <h3>品質</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h3 class="h3-font-style">見える、マクドナルド品質</h3>
+        <span class="span-font-style"
+          >食の安全・安心のためにマクドナルドが取り組んでいることをご紹介します。</span
+        >
         <ul class="cards flex flex-wrap justify-between gap-2">
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
+          <a
+            href="#"
+            class="my-4 min-h-[217px] w-[48%]"
+            v-for="item in data.quality.card"
+            :key="item.id"
+          >
+            <li class="h-full rounded-xl shadow">
+              <img :src="item.img" class="rounded-t-xl" alt="photo on screen" />
+              <p class="span-font-style px-2">{{ item.title }}</p>
+            </li>
+          </a>
         </ul>
-        <h2 class="mt-4 text-right">查看更多資料</h2>
+        <ReadMore>
+          <slot>もっと見る</slot>
+        </ReadMore>
       </div>
-      <!-- 店舖資訊 -->
       <div class="mt-8">
-        <h3>店舖資訊</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h3 class="h3-font-style">お店・サービス</h3>
+        <span class="span-font-style"
+          >マクドナルドにおけるさまざまなサービスをご紹介します。</span
+        >
         <ul class="cards flex flex-wrap justify-between gap-2">
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
+          <a
+            href="#"
+            class="my-4 min-h-[217px] w-[48%]"
+            v-for="item in data.store.card"
+            :key="item.id"
+          >
+            <li class="h-full rounded-xl shadow">
+              <img :src="item.img" class="rounded-t-xl" alt="photo on screen" />
+              <p class="span-font-style px-2">{{ item.title }}</p>
+            </li>
+          </a>
         </ul>
-        <h2 class="mt-4 text-right">查看更多資料</h2>
+        <ReadMore>
+          <slot>もっと見る</slot>
+        </ReadMore>
       </div>
-      <!-- 未來展望 -->
       <div class="mt-8">
-        <h3>未來展望</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h3 class="h3-font-style">サステナビリティ</h3>
+        <span class="span-font-style"
+          >世界100カ国以上で親しまれているマクドナルドだからこそできる、持続可能な社会のための取り組みをご紹介します。</span
+        >
         <ul class="cards flex flex-wrap justify-between gap-2">
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
+          <a
+            href="#"
+            class="min-h-36 my-4 w-[48%]"
+            v-for="item in data.future.card"
+            :key="item.id"
+          >
+            <li class="h-full rounded-xl shadow">
+              <img :src="item.img" class="rounded-t-xl" alt="photo on screen" />
+              <p class="span-font-style px-2">{{ item.title }}</p>
+            </li>
+          </a>
         </ul>
-        <h2 class="mt-4 text-right">查看更多資料</h2>
+        <ReadMore>
+          <slot>もっと見る</slot>
+        </ReadMore>
       </div>
-      <!-- 社會責任 -->
       <div class="mt-8">
-        <h3>社會責任</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h3 class="h3-font-style">社会とのつながり</h3>
+        <span class="span-font-style"
+          >子供たちの未来がより幸せなものでありますように、マクドナルドは社会貢献活動に取り組んでいます。</span
+        >
         <ul class="cards flex flex-wrap justify-between gap-2">
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
-          <li class="w-[48%] rounded-xl border bg-slate-300">
-            <img src="../assets/menu-001.jpeg" alt="" />
-            <p>Lorem ipsum dolor sit</p>
-          </li>
+          <a
+            href="#"
+            class="my-4 min-h-[217px] w-[48%]"
+            v-for="item in data.society.card"
+            :key="item.id"
+          >
+            <li class="h-full rounded-xl shadow">
+              <img :src="item.img" class="rounded-t-xl" alt="photo on screen" />
+              <p class="span-font-style px-2">{{ item.title }}</p>
+            </li>
+          </a>
         </ul>
-        <h2 class="mt-4 text-right">查看更多資料</h2>
+        <ReadMore>
+          <slot>もっと見る</slot>
+        </ReadMore>
       </div>
       <!-- 相關疑問 -->
       <div class="mt-8">
-        <h3>相關疑問</h3>
-        <span>Lorem ipsum dolor sit amet</span>
+        <h3 class="h3-font-style">よくあるご質問</h3>
+        <span class="span-font-style">最近増えたご質問</span>
         <ul class="mt-4 flex flex-col gap-4">
-          <li class="rounded-xl border">
-            <span>日期</span>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
-              magnam velit suscipit placeat sit repellat error possimus!
-              Sapiente ab laboriosam vero?
-            </p>
+          <li
+            v-for="item in data.question.card"
+            :key="item.id"
+            class="h-20 rounded-xl border p-4 shadow"
+          >
+            <p class="span-font-style">{{ item.info }}</p>
           </li>
-          <li class="rounded-xl border">
-            <span>日期</span>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
-              magnam velit suscipit placeat sit repellat error possimus!
-              Sapiente ab laboriosam vero?
-            </p>
-          </li>
-          <li class="rounded-xl border">
-            <span>日期</span>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
-              magnam velit suscipit placeat sit repellat error possimus!
-              Sapiente ab laboriosam vero?
-            </p>
-          </li>
-          <h2 class="text-right">查看更多資料</h2>
+          <ReadMore>
+            <slot>一覧を見る</slot>
+          </ReadMore>
         </ul>
       </div>
       <!-- APP下載 -->
@@ -664,177 +1037,142 @@ const data = reactive({
     <!-- footer -->
     <div class="bg-white">
       <div class="px-4">
-        <h4>title</h4>
+        <h5 class="my-4 text-sm font-bold">ホーム</h5>
         <div>
-          <h5>分類標題1</h5>
-          <div class="flex justify-between">
-            <ul class="bg-red-300">
-              <li>Lorem ipsum sit</li>
-              <li>Lorem</li>
-              <li>Lorem dolor</li>
-              <li>Lorem ip dolor sit</li>
-            </ul>
-            <ul class="bg-blue-300">
-              <li>Lorem ipsum dolor sit</li>
-              <li>Lo ium dol sit</li>
-              <li>Lorem ipsuor sit</li>
-              <li>Lorem ipsum dolor sit</li>
-              <li>Lo ipsum do sit</li>
-            </ul>
-          </div>
+          <h5 class="text-sm font-bold">{{ data.footer.menu.title }}</h5>
+          <ul class="flex w-full flex-wrap gap-3 py-4 text-xs">
+            <li
+              class="w-[47%] text-gray-500"
+              v-for="i in data.footer.menu.item"
+              :key="i.id"
+            >
+              {{ i.title }}
+            </li>
+          </ul>
         </div>
         <div>
-          <h5>分類標題2</h5>
-          <div class="flex justify-between">
-            <ul class="bg-red-300">
-              <li>Lorem ipsum sit</li>
-              <li>Lorem</li>
-            </ul>
-            <ul class="bg-blue-300">
-              <li>Lorem ipsum dolor sit</li>
-            </ul>
-          </div>
+          <h5 class="text-sm font-bold">{{ data.footer.actions.title }}</h5>
+          <ul class="text-xs">
+            <li
+              class="text-gray-500"
+              v-for="i in data.footer.actions.item"
+              :key="i.id"
+            >
+              {{ i.title }}
+            </li>
+          </ul>
         </div>
         <div>
-          <h5>分類標題3</h5>
-          <div class="flex justify-between">
-            <ul class="bg-red-300">
-              <li>Lorem ipsum sit</li>
-              <li>Lorem</li>
-              <li>Lorem dolor</li>
-              <li>Lorem ip dolor sit</li>
-            </ul>
-            <ul class="bg-blue-300">
-              <li>Lorem ipsum dolor sit</li>
-              <li>Lo ium dol sit</li>
-              <li>Lorem ipsuor sit</li>
-              <li>Lorem ipsum dolor sit</li>
-              <li>Lo ipsum do sit</li>
-            </ul>
-          </div>
+          <h5 class="text-sm font-bold">{{ data.footer.sustainable.title }}</h5>
+          <ul class="text-xs">
+            <li
+              class="text-gray-500"
+              v-for="i in data.footer.sustainable.item"
+              :key="i.id"
+            >
+              {{ i.title }}
+            </li>
+          </ul>
         </div>
         <div>
-          <h5>分類標題4</h5>
-          <div class="flex justify-between">
-            <ul class="bg-red-300">
-              <li>Lorem ipsum sit</li>
-              <li>Lorem</li>
-              <li>Lorem dolor</li>
-              <li>Lorem ip dolor sit</li>
-            </ul>
-            <ul class="bg-blue-300">
-              <li>Lorem ipsum dolor sit</li>
-              <li>Lo ium dol sit</li>
-              <li>Lorem ipsuor sit</li>
-              <li>Lorem ipsum dolor sit</li>
-              <li>Lo ipsum do sit</li>
-            </ul>
-          </div>
+          <h5 class="text-sm font-bold">
+            {{ data.footer.storeService.title }}
+          </h5>
+          <ul class="text-xs">
+            <li
+              class="text-gray-500"
+              v-for="i in data.footer.storeService.item"
+              :key="i.id"
+            >
+              {{ i.title }}
+            </li>
+          </ul>
         </div>
         <div>
-          <h5>分類標題5</h5>
-          <div class="flex justify-between">
-            <ul class="bg-red-300">
-              <li>Lorem ipsum sit</li>
-              <li>Lorem</li>
-              <li>Lorem dolor</li>
-              <li>Lorem ip dolor sit</li>
-            </ul>
-            <ul class="bg-blue-300">
-              <li>Lorem ipsum dolor sit</li>
-              <li>Lo ium dol sit</li>
-              <li>Lorem ipsuor sit</li>
-              <li>Lorem ipsum dolor sit</li>
-              <li>Lo ipsum do sit</li>
-            </ul>
-          </div>
+          <h5 class="text-sm font-bold">{{ data.footer.aboutUs.title }}</h5>
+          <ul class="text-xs">
+            <li
+              class="text-gray-500"
+              v-for="i in data.footer.aboutUs.item"
+              :key="i.id"
+            >
+              {{ i.title }}
+            </li>
+          </ul>
         </div>
         <div>
-          <h5>分類標題6</h5>
-          <div class="flex justify-between">
-            <ul class="bg-red-300">
-              <li>Lorem ipsum sit</li>
-              <li>Lorem</li>
-              <li>Lorem dolor</li>
-              <li>Lorem ip dolor sit</li>
-            </ul>
-            <ul class="bg-blue-300">
-              <li>Lorem ipsum dolor sit</li>
-              <li>Lo ium dol sit</li>
-              <li>Lorem ipsuor sit</li>
-              <li>Lorem ipsum dolor sit</li>
-              <li>Lo ipsum do sit</li>
-            </ul>
-          </div>
+          <h5 class="text-sm font-bold">{{ data.footer.question.title }}</h5>
+          <ul class="text-xs">
+            <li
+              class="text-gray-500"
+              v-for="i in data.footer.question.item"
+              :key="i.id"
+            >
+              {{ i.title }}
+            </li>
+          </ul>
         </div>
         <div>
-          <h5>分類標題7</h5>
-          <div class="flex justify-between">
-            <ul class="bg-red-300">
-              <li>Lorem ipsum sit</li>
-              <li>Lorem</li>
-              <li>Lorem dolor</li>
-              <li>Lorem ip dolor sit</li>
-            </ul>
-            <ul class="bg-blue-300">
-              <li>Lorem ipsum dolor sit</li>
-              <li>Lo ium dol sit</li>
-              <li>Lorem ipsuor sit</li>
-              <li>Lorem ipsum dolor sit</li>
-              <li>Lo</li>
-            </ul>
-          </div>
+          <h5 class="text-sm font-bold">{{ data.footer.job.title }}</h5>
+          <ul class="text-xs">
+            <li
+              class="text-gray-500"
+              v-for="i in data.footer.job.item"
+              :key="i.id"
+            >
+              {{ i.title }}
+            </li>
+          </ul>
         </div>
         <div>
-          <h5>分類標題8</h5>
-          <div class="flex justify-between">
-            <ul class="bg-red-300">
-              <li>Lorem ipsum sit</li>
-              <li>Lorem</li>
-              <li>Lorem dolor</li>
-              <li>Lorem ip dolor sit</li>
-            </ul>
-            <ul class="bg-blue-300">
-              <li>Lorem ipsum dolor sit</li>
-              <li>Lo ium dol sit</li>
-              <li>Lorem ipsuor sit</li>
-              <li>Lorem ipsum dolor sit</li>
-              <li>Lo ipsum do sit</li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <h5>分類標題9</h5>
-          <div class="flex justify-between">
-            <ul class="bg-red-300">
-              <li>Lorem ipsum sit</li>
-              <li>Lorem</li>
-              <li>Lorem dolor</li>
-              <li>Lorem ip dolor sit</li>
-            </ul>
-            <ul class="bg-blue-300">
-              <li>Lorem ipsum dolor sit</li>
-              <li>Lo ium dol sit</li>
-              <li>Lorem ipsuor sit</li>
-              <li>Lorem ipsum dolor sit</li>
-              <li>Lo ipsum do sit</li>
-            </ul>
-          </div>
+          <h5 class="text-sm font-bold">{{ data.footer.sns.title }}</h5>
+          <ul class="text-xs">
+            <li
+              class="text-gray-500"
+              v-for="i in data.footer.sns.item"
+              :key="i.id"
+            >
+              {{ i.title }}
+            </li>
+          </ul>
         </div>
         <!-- 網站語言 -->
         <div class="mt-8 gap-4 border-t-2">
-          <div class="flex w-full">
-            <p class="w-1/2">日本語</p>
-            <p class="w-1/2">English</p>
+          <div class="flex w-full items-center text-sm">
+            <div class="flex w-1/2 items-center">
+              <a class="text-red-0">日本語</a>
+              <svg
+                class="ml-1"
+                width="14"
+                height="10"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 14 10"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <path d="M216-547v671h-375v-671h375z" fill="#FFF"></path>
+                  <path
+                    d="M4.986 6.83L2.158 2.98.547 4.166l4.161 5.664 8.803-8.239L12.145.13z"
+                    fill="#DB0007"
+                    fill-rule="nonzero"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+
+            <a class="w-1/2">English</a>
           </div>
-          <ul class="flex gap-2 divide-x">
+          <ul class="flex gap-2 divide-x text-xs text-gray-500">
             <li>利用規約</li>
             <li>個人情報保護方針</li>
-            <li>法律什麼的</li>
+            <li>法律に基づく情報</li>
           </ul>
-          <span>日本12345798</span>
+          <span class="text-xs text-gray-500"
+            >日本マクドナルドホールディングス</span
+          >
           <div class="my-8 flex items-end justify-between">
-            <span>copyright</span>
+            <span class="text-xs text-gray-500"
+              >©2022 McDONALD’S. All Rights Reserved.</span
+            >
             <div class="w-14">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1077,15 +1415,15 @@ const data = reactive({
           ></path>
         </svg>
       </div>
-      <div>
-        <h3>title</h3>
+      <div class="font-black">
+        <h3>モバイルオーダー</h3>
         <span>スマホでスムーズに</span>
         <br />
         <span> ご注文・お支払い </span>
       </div>
       <div>
         <button class="rounded-xl bg-yellow-0 px-4">
-          <span>button</span>
+          <span>今すぐ注文</span>
         </button>
       </div>
     </div>
