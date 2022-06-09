@@ -883,20 +883,22 @@ const data = reactive({
         </div>
       </div>
     </div>
-    <div class="mt-8 bg-white px-4">
-      <h5 class="py-4 text-sm font-bold">ホーム</h5>
-      <div>
-        <h5 class="text-sm font-bold">{{ data.footer.menu.title }}</h5>
-        <ul class="footer-ul-layout">
-          <li
-            class="footer-li-layout"
-            v-for="i in data.footer.menu.item"
-            :key="i.id"
-          >
-            {{ i.title }}
-          </li>
-        </ul>
+    <div class="mt-8 bg-white px-4 md:pt-8">
+      <div class="md:flex md:justify-between md:gap-4">
         <div>
+          <h5 class="py-4 text-sm font-bold md:py-0 md:pb-8">ホーム</h5>
+          <h5 class="text-sm font-bold">{{ data.footer.menu.title }}</h5>
+          <ul class="footer-ul-layout">
+            <li
+              class="footer-li-layout"
+              v-for="i in data.footer.menu.item"
+              :key="i.id"
+            >
+              {{ i.title }}
+            </li>
+          </ul>
+        </div>
+        <div class="md:flex md:flex-col md:gap-4">
           <h5 class="text-sm font-bold">{{ data.footer.actions.title }}</h5>
           <ul class="footer-ul-layout">
             <li
@@ -907,9 +909,23 @@ const data = reactive({
               {{ i.title }}
             </li>
           </ul>
+          <h5 class="text-sm font-bold">
+            {{ data.footer.family.title }}
+          </h5>
+          <ul class="footer-ul-layout">
+            <li
+              class="footer-li-layout"
+              v-for="i in data.footer.family.item"
+              :key="i.id"
+            >
+              {{ i.title }}
+            </li>
+          </ul>
         </div>
         <div>
-          <h5 class="text-sm font-bold">{{ data.footer.sustainable.title }}</h5>
+          <h5 class="text-sm font-bold">
+            {{ data.footer.sustainable.title }}
+          </h5>
           <ul class="footer-ul-layout">
             <li
               class="footer-li-layout"
@@ -957,8 +973,7 @@ const data = reactive({
               {{ i.title }}
             </li>
           </ul>
-        </div>
-        <div>
+
           <h5 class="text-sm font-bold">{{ data.footer.job.title }}</h5>
           <ul class="footer-ul-layout">
             <li
@@ -969,8 +984,7 @@ const data = reactive({
               {{ i.title }}
             </li>
           </ul>
-        </div>
-        <div>
+
           <h5 class="text-sm font-bold">{{ data.footer.sns.title }}</h5>
           <ul class="footer-ul-layout">
             <li
@@ -982,36 +996,36 @@ const data = reactive({
             </li>
           </ul>
         </div>
-        <div class="mt-4 gap-4 border-t">
-          <div class="mt-4 flex w-full items-center text-sm">
-            <div class="flex w-1/2 items-center">
-              <a class="text-red-0">日本語</a>
-              <img
-                src="../assets/icons/icon-red-check.svg"
-                alt="red check on screen"
-              />
-            </div>
-
-            <a class="w-1/2">English</a>
+      </div>
+      <div class="mt-4 gap-4 border-t">
+        <div class="mt-4 flex w-full items-center text-sm">
+          <div class="flex w-1/2 items-center">
+            <a class="text-red-0">日本語</a>
+            <img
+              src="../assets/icons/icon-red-check.svg"
+              alt="red check on screen"
+            />
           </div>
-          <ul class="mt-8 flex gap-2 text-xs text-gray-500">
-            <li>利用規約</li>
-            <li>|</li>
-            <li>個人情報保護方針</li>
-            <li>|</li>
-            <li>法律に基づく情報</li>
-            <li>|</li>
-          </ul>
+
+          <a class="w-1/2">English</a>
+        </div>
+        <ul class="mt-8 flex gap-2 text-xs text-gray-500">
+          <li>利用規約</li>
+          <li>|</li>
+          <li>個人情報保護方針</li>
+          <li>|</li>
+          <li>法律に基づく情報</li>
+          <li>|</li>
+        </ul>
+        <span class="text-xs text-gray-500"
+          >日本マクドナルドホールディングス</span
+        >
+        <div class="my-8 flex items-end justify-between">
           <span class="text-xs text-gray-500"
-            >日本マクドナルドホールディングス</span
+            >©2022 McDONALD’S. All Rights Reserved.</span
           >
-          <div class="my-8 flex items-end justify-between">
-            <span class="text-xs text-gray-500"
-              >©2022 McDONALD’S. All Rights Reserved.</span
-            >
-            <div class="w-14">
-              <img src="../assets/mcd-xl-logo.svg" alt="logo on screen" />
-            </div>
+          <div class="w-14">
+            <img src="../assets/mcd-xl-logo.svg" alt="logo on screen" />
           </div>
         </div>
       </div>
@@ -1023,13 +1037,14 @@ const data = reactive({
         <img
           src="../assets/icons/icon-M-shopcart.svg"
           alt="M's shopcart on screen"
+          class="hidden xs:block"
         />
       </div>
       <div class="font-black">
         <h3>モバイルオーダー</h3>
-        <span>スマホでスムーズに</span>
+        <span class="span-font-style">スマホでスムーズに</span>
         <br />
-        <span> ご注文・お支払い </span>
+        <span class="span-font-style"> ご注文・お支払い </span>
       </div>
       <div>
         <button class="rounded-xl bg-yellow-0 px-4">

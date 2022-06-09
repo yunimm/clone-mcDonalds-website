@@ -7,6 +7,10 @@ module.exports = {
     maxWidth: {
       'xs': '375px',
     },
+    screens: {
+      'xs': '360px',
+      ...defaultTheme.screens,
+    },
     extend: {
       fontFamily: {
         sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
@@ -32,7 +36,7 @@ module.exports = {
       backgroundSize: {
         '50%': '50%',
         '16': '4.5rem',
-      }
+      },
     },
   },
   plugins: [
