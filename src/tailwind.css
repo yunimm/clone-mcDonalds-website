@@ -20,3 +20,9 @@
 .flex-center {
   @apply flex items-center justify-center;
 }
+.footer-ul-layout {
+  @apply flex w-full flex-wrap gap-3 py-4 text-xs;
+}
+.footer-li-layout {
+  @apply w-[47%] text-gray-500;
+}
