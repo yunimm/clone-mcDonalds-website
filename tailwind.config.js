@@ -9,6 +9,7 @@ module.exports = {
     },
     screens: {
       'xs': '360px',
+      's': '480px',
       ...defaultTheme.screens,
     },
     extend: {
@@ -31,6 +32,7 @@ module.exports = {
       },
       height: {
         '17': '4.3rem',
+        '70': '17.5rem',
         '86': '21.5rem'
       },
       backgroundSize: {

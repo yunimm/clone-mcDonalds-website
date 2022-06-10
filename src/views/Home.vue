@@ -551,7 +551,7 @@ const data = reactive({
           {{ data.warning.title }}
         </h3>
         <div
-          class="flex h-17 items-center gap-4 rounded-xl bg-red-0 px-6 py-3 text-xs text-white"
+          class="flex h-17 items-center justify-between gap-4 rounded-xl bg-red-0 px-6 py-3 text-xs text-white"
         >
           <span>
             {{ data.warning.card }}
@@ -637,7 +637,7 @@ const data = reactive({
             class="rounded-xl border bg-white p-4 shadow-md"
           >
             <h3 class="h3-font-style">{{ item.date }}</h3>
-            <div class="flex gap-6 pr-2">
+            <div class="flex justify-between gap-6 pr-2">
               <p class="font-bold line-clamp-2">
                 {{ item.info }}
               </p>
@@ -661,9 +661,15 @@ const data = reactive({
             class="rounded-xl border bg-white p-4"
           >
             <h3 class="h3-font-style">{{ item.date }}</h3>
-            <p class="font-bold line-clamp-2">
-              {{ item.info }}
-            </p>
+            <div class="flex justify-between gap-6 pr-2">
+              <p class="font-bold line-clamp-2">
+                {{ item.info }}
+              </p>
+              <img
+                src="../assets/icons/icon-arrow-SR.svg"
+                alt="arrow on screen"
+              />
+            </div>
           </li>
         </ul>
       </div>
@@ -699,13 +705,17 @@ const data = reactive({
         <ul class="cards flex flex-wrap justify-between gap-2">
           <a
             href="#"
-            class="min-h-52 my-4 w-[48%] bg-white"
+            class="min-h-52 my-4 w-[48%]"
             v-for="item in data.family.card"
             :key="item.id"
           >
-            <li class="rounded-xl shadow">
-              <img :src="item.img" class="rounded-t-xl" alt="photo on screen" />
-              <span class="span-font-style px-2">{{ item.title }}</span>
+            <li class="rounded-xl bg-white shadow">
+              <img
+                :src="item.img"
+                class="w-full rounded-t-xl"
+                alt="photo on screen"
+              />
+              <p class="span-font-style px-2 s:p-4">{{ item.title }}</p>
             </li>
           </a>
         </ul>
@@ -721,13 +731,17 @@ const data = reactive({
         <ul class="cards flex flex-wrap justify-between gap-2">
           <a
             href="#"
-            class="min-h-54 my-4 w-[48%] bg-white"
+            class="min-h-54 my-4 w-[48%]"
             v-for="item in data.quality.card"
             :key="item.id"
           >
             <li class="h-full rounded-xl shadow">
-              <img :src="item.img" class="rounded-t-xl" alt="photo on screen" />
-              <p class="span-font-style px-2">{{ item.title }}</p>
+              <img
+                :src="item.img"
+                class="w-full rounded-t-xl"
+                alt="photo on screen"
+              />
+              <p class="span-font-style px-2 s:p-4">{{ item.title }}</p>
             </li>
           </a>
         </ul>
@@ -748,8 +762,12 @@ const data = reactive({
             :key="item.id"
           >
             <li class="h-full rounded-xl shadow">
-              <img :src="item.img" class="rounded-t-xl" alt="photo on screen" />
-              <p class="span-font-style px-2">{{ item.title }}</p>
+              <img
+                :src="item.img"
+                class="w-full rounded-t-xl"
+                alt="photo on screen"
+              />
+              <p class="span-font-style px-2 s:p-4">{{ item.title }}</p>
             </li>
           </a>
         </ul>
@@ -770,8 +788,12 @@ const data = reactive({
             :key="item.id"
           >
             <li class="h-full rounded-xl shadow">
-              <img :src="item.img" class="rounded-t-xl" alt="photo on screen" />
-              <p class="span-font-style px-2">{{ item.title }}</p>
+              <img
+                :src="item.img"
+                class="w-full rounded-t-xl"
+                alt="photo on screen"
+              />
+              <p class="span-font-style px-2 s:p-4">{{ item.title }}</p>
             </li>
           </a>
         </ul>
@@ -792,8 +814,12 @@ const data = reactive({
             :key="item.id"
           >
             <li class="h-full rounded-xl shadow">
-              <img :src="item.img" class="rounded-t-xl" alt="photo on screen" />
-              <p class="span-font-style px-2">{{ item.title }}</p>
+              <img
+                :src="item.img"
+                class="w-full rounded-t-xl"
+                alt="photo on screen"
+              />
+              <p class="span-font-style px-2 s:p-4">{{ item.title }}</p>
             </li>
           </a>
         </ul>
@@ -808,9 +834,13 @@ const data = reactive({
           <li
             v-for="item in data.question.card"
             :key="item.id"
-            class="h-20 rounded-xl border bg-white p-4 shadow"
+            class="flex h-20 items-center justify-between rounded-xl bg-white p-4 shadow"
           >
             <p class="span-font-style">{{ item.info }}</p>
+            <img
+              src="../assets/icons/icon-arrow-SR.svg"
+              alt="arrow on screen"
+            />
           </li>
           <ReadMore>
             <slot>一覧を見る</slot>
@@ -819,7 +849,7 @@ const data = reactive({
       </div>
       <div class="mt-8 rounded-xl bg-white shadow">
         <div
-          class="mx-2 max-h-48 bg-[url('../src/assets/bg-001.png')] bg-16 bg-clip-border bg-right bg-no-repeat"
+          class="mx-2 max-h-48 bg-[url('../src/assets/bg-001.png')] bg-16 bg-clip-border bg-right bg-no-repeat s:h-72"
         >
           <div class="p-2">
             <span class="span-font-style"> マクドナルド公式アプリ </span>
@@ -973,7 +1003,6 @@ const data = reactive({
               {{ i.title }}
             </li>
           </ul>
-
           <h5 class="text-sm font-bold">{{ data.footer.job.title }}</h5>
           <ul class="footer-ul-layout">
             <li
