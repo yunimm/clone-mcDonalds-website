@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "daisyui": "^2.15.1",
-    "vue": "^3.2.33",
+    "vue": "^3.2.37",
     "vue-router": "^4.0.15"
   },
   "devDependencies": {
