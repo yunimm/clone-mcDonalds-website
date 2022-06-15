@@ -1,8 +1,8 @@
 ## Motivation
-Proficient in Tailwind operation and practice RWD layout.
+Proficient in Tailwind operation and practice RWD layout
 
 ## Description
-Referring to the official website of McDonald's in Japan, try to carve the face without a design draft.
+Referring to the official website of McDonald's in Japan, try to carve the face without a design draft
 ## Features
 Users can browse the website smoothly from the mobile version, tablet version, and computer version
 ### Skills
